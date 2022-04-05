@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:rps_mobile_game/screens/game_screen.dart';
 
@@ -13,7 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
+        accentColor: Colors.indigo[900],
+        canvasColor: Color.fromARGB(255, 241, 241, 227),
       ),
       home: const GameScreen(),
     );
