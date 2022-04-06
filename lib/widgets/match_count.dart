@@ -13,12 +13,15 @@ class _MatchCountState extends State<MatchCount> {
     // ignore: prefer_const_constructors
     return Padding(
       padding: const EdgeInsets.fromLTRB(0, 10, 0, 2),
-      child: const Text('Match :1',
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-          )),
+      child: Text(
+        'Match :1',
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontSize: 20,
+          color: Theme.of(context).accentColor,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
     );
   }
 }

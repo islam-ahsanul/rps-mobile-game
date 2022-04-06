@@ -20,6 +20,7 @@ class _ResultMessageState extends State<ResultMessage> {
         style: TextStyle(
           fontSize: 20,
           fontWeight: FontWeight.bold,
+          color: Colors.white,
         ),
       ),
       height: 200,

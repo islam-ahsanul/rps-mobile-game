@@ -15,7 +15,7 @@ class _ScoreCardState extends State<ScoreCard> {
   @override
   Widget build(BuildContext context) {
     return Card(
-      shadowColor: Colors.pink,
+      shadowColor: Theme.of(context).accentColor,
       elevation: 20,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15),
@@ -32,7 +32,7 @@ class _ScoreCardState extends State<ScoreCard> {
                 'Score:',
                 style: TextStyle(
                     fontSize: 30,
-                    color: Theme.of(context).accentColor,
+                    color: Theme.of(context).canvasColor,
                     fontWeight: FontWeight.bold),
               ),
             ),

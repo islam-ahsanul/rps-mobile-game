@@ -10,35 +10,62 @@ class RPSbuttons extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {},
           child: Text(
             'Rock',
-            style: TextStyle(
-              fontSize: 20,
-            ),
           ),
-          color: Theme.of(context).accentColor,
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all(Colors.white),
+            foregroundColor:
+                MaterialStateProperty.all(Theme.of(context).primaryColor),
+            overlayColor:
+                MaterialStateProperty.all(Theme.of(context).canvasColor),
+            textStyle: MaterialStateProperty.all(
+                TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+            fixedSize: MaterialStateProperty.all(Size.fromWidth(100)),
+            elevation: MaterialStateProperty.all(20),
+            shadowColor:
+                MaterialStateProperty.all(Theme.of(context).accentColor),
+          ),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {},
           child: Text(
             'Paper',
-            style: TextStyle(
-              fontSize: 20,
-            ),
           ),
-          color: Theme.of(context).accentColor,
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all(Colors.white),
+            foregroundColor:
+                MaterialStateProperty.all(Theme.of(context).primaryColor),
+            overlayColor:
+                MaterialStateProperty.all(Theme.of(context).canvasColor),
+            textStyle: MaterialStateProperty.all(
+                TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+            fixedSize: MaterialStateProperty.all(Size.fromWidth(100)),
+            elevation: MaterialStateProperty.all(20),
+            shadowColor:
+                MaterialStateProperty.all(Theme.of(context).accentColor),
+          ),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {},
           child: Text(
             'Scissor',
-            style: TextStyle(
-              fontSize: 20,
-            ),
           ),
-          color: Theme.of(context).accentColor,
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all(Colors.white),
+            foregroundColor:
+                MaterialStateProperty.all(Theme.of(context).primaryColor),
+            overlayColor:
+                MaterialStateProperty.all(Theme.of(context).canvasColor),
+            textStyle: MaterialStateProperty.all(
+                TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+            fixedSize: MaterialStateProperty.all(Size.fromWidth(100)),
+            elevation: MaterialStateProperty.all(20),
+            shadowColor:
+                MaterialStateProperty.all(Theme.of(context).accentColor),
+          ),
         ),
       ],
     );

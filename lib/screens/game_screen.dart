@@ -16,12 +16,15 @@ class GameScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Game Screen"),
+        backgroundColor: Theme.of(context).canvasColor,
+        elevation: 15,
+        shadowColor: Theme.of(context).accentColor,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           MatchCount(),
-          Divider(),
+          Divider(color: Theme.of(context).accentColor),
           Expanded(
             child: Column(
               children: [
