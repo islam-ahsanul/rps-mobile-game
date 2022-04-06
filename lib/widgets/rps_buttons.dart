@@ -14,7 +14,7 @@ class RPSbuttons extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         ElevatedButton(
-          onPressed: () => sender.playersPick = 0,
+          onPressed: () => sender.playersPick(0),
           child: Text(
             'Rock',
           ),
@@ -33,7 +33,7 @@ class RPSbuttons extends StatelessWidget {
           ),
         ),
         ElevatedButton(
-          onPressed: () => sender.playersPick = 1,
+          onPressed: () => sender.playersPick(1),
           child: Text(
             'Paper',
           ),
@@ -52,7 +52,7 @@ class RPSbuttons extends StatelessWidget {
           ),
         ),
         ElevatedButton(
-          onPressed: () => sender.playersPick = 2,
+          onPressed: () => sender.playersPick(2),
           child: Text(
             'Scissor',
           ),
