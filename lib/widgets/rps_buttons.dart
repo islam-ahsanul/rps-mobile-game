@@ -1,17 +1,20 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:rps_mobile_game/models/model_provider.dart';
 
 class RPSbuttons extends StatelessWidget {
   const RPSbuttons({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final sender = Provider.of<MySender>(context);
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () => sender.playersPick = 0,
           child: Text(
             'Rock',
           ),
@@ -30,7 +33,7 @@ class RPSbuttons extends StatelessWidget {
           ),
         ),
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () => sender.playersPick = 1,
           child: Text(
             'Paper',
           ),
@@ -49,7 +52,7 @@ class RPSbuttons extends StatelessWidget {
           ),
         ),
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () => sender.playersPick = 2,
           child: Text(
             'Scissor',
           ),

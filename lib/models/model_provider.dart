@@ -21,19 +21,19 @@ class MySender with ChangeNotifier {
     _matchCnt++;
 
     if (_randInt == _playersPick) {
-      _message = "Match Draw!\n";
+      _message = "Match Draw!";
     } else if (_playersPick == 0) {
       if (_randInt == 1) {
         _message = "You lost! Computer played Paper";
         _computerPoints++;
       } else if (_randInt == 2) {
         _message = "You won! Computer played Scissor";
-        _playerPoints;
+        _playerPoints++;
       }
     } else if (_playersPick == 1) {
       if (_randInt == 0) {
         _message = "You won! Computer played Rock";
-        _playerPoints;
+        _playerPoints++;
       } else if (_randInt == 2) {
         _message = "You lost! Computer played Scissor";
         _computerPoints++;
@@ -44,7 +44,7 @@ class MySender with ChangeNotifier {
         _computerPoints++;
       } else if (_randInt == 1) {
         _message = "You won! Computer played Paper";
-        _playerPoints;
+        _playerPoints++;
       }
     }
     notifyListeners();

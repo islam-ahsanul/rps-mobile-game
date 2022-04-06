@@ -3,6 +3,9 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import 'package:rps_mobile_game/models/model_provider.dart';
 
 class ScoreCard extends StatefulWidget {
   const ScoreCard({Key? key}) : super(key: key);
@@ -14,6 +17,9 @@ class ScoreCard extends StatefulWidget {
 class _ScoreCardState extends State<ScoreCard> {
   @override
   Widget build(BuildContext context) {
+    final sender = Provider.of<MySender>(context);
+    var player = sender.playerPoints;
+    var computer = sender.computerPoints;
     return Card(
       shadowColor: Theme.of(context).accentColor,
       elevation: 20,
@@ -47,7 +53,7 @@ class _ScoreCardState extends State<ScoreCard> {
                     elevation: 5,
                     child: ListTile(
                       title: Text(
-                        'You: 2',
+                        'You: $player',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -73,7 +79,7 @@ class _ScoreCardState extends State<ScoreCard> {
                         color: Theme.of(context).primaryColor,
                       ),
                       title: Text(
-                        'Computer: 2',
+                        'Computer: $computer',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
