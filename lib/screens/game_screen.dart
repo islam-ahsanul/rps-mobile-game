@@ -10,6 +10,7 @@ import 'package:rps_mobile_game/widgets/newGame_button.dart';
 
 class GameScreen extends StatelessWidget {
   const GameScreen({Key? key}) : super(key: key);
+  static const routeName = '/game-screen';
 
   @override
   Widget build(BuildContext context) {
