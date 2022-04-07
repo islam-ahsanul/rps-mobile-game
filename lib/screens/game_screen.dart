@@ -16,7 +16,8 @@ class GameScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Game Screen"),
+        title: const Text("Rock Paper Scissor"),
+        centerTitle: true,
         backgroundColor: Theme.of(context).canvasColor,
         elevation: 15,
         shadowColor: Theme.of(context).accentColor,

@@ -43,12 +43,27 @@ class WelcomePage extends StatelessWidget {
             ),
           ),
           onPressed: () {
-            Navigator.of(context).pushNamed(GameScreen.routeName);
+            // Navigator.of(context).pushNamed(GameScreen.routeName);
+
             // Navigator.of(context).push(
             //   CustomRoute(
             //     builder: (ctx) => GameScreen(),
             //   ),
             // );
+
+            Navigator.push(
+              context,
+              PageRouteBuilder(
+                barrierColor: Theme.of(context).canvasColor,
+                pageBuilder: (choco, animation1, animation2) => GameScreen(),
+                transitionsBuilder: (choco, animation, animation2, child) =>
+                    FadeTransition(
+                  opacity: animation,
+                  child: child,
+                ),
+                transitionDuration: Duration(milliseconds: 800),
+              ),
+            );
           },
         ),
       ),

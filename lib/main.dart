@@ -26,10 +26,10 @@ class MyApp extends StatelessWidget {
           accentColor: Colors.cyan[300],
           // canvasColor: Color.fromARGB(255, 241, 241, 227),
           canvasColor: Color.fromARGB(255, 8, 5, 33),
-          pageTransitionsTheme: PageTransitionsTheme(builders: {
-            TargetPlatform.android: CustomPageTransitionBuilder(),
-            TargetPlatform.iOS: CustomPageTransitionBuilder(),
-          }),
+          // pageTransitionsTheme: PageTransitionsTheme(builders: {
+          //   TargetPlatform.android: CustomPageTransitionBuilder(),
+          //   TargetPlatform.iOS: CustomPageTransitionBuilder(),
+          // }),
         ),
         home: const WelcomePage(),
         routes: {
