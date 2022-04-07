@@ -29,6 +29,7 @@ class WelcomePage extends StatelessWidget {
           ),
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(Colors.transparent),
+            enableFeedback: true,
             overlayColor: MaterialStateProperty.all(
                 Theme.of(context).canvasColor.withOpacity(0.9)),
             textStyle: MaterialStateProperty.all(

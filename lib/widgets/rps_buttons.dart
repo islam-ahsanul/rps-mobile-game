@@ -20,6 +20,7 @@ class RPSbuttons extends StatelessWidget {
           ),
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(Colors.white),
+            enableFeedback: true,
             foregroundColor:
                 MaterialStateProperty.all(Theme.of(context).primaryColor),
             overlayColor:
@@ -39,6 +40,7 @@ class RPSbuttons extends StatelessWidget {
           ),
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(Colors.white),
+            enableFeedback: true,
             foregroundColor:
                 MaterialStateProperty.all(Theme.of(context).primaryColor),
             overlayColor:
@@ -58,6 +60,7 @@ class RPSbuttons extends StatelessWidget {
           ),
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(Colors.white),
+            enableFeedback: true,
             foregroundColor:
                 MaterialStateProperty.all(Theme.of(context).primaryColor),
             overlayColor:
