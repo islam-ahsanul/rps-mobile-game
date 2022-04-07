@@ -14,9 +14,12 @@ class WelcomePage extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: const [
-              Colors.cyanAccent,
+            begin: Alignment.centerLeft,
+            end: Alignment.topRight,
+            colors: [
+              // Theme.of(context).canvasColor,
               Colors.white,
+              Colors.cyanAccent,
             ],
           ),
         ),
@@ -32,7 +35,8 @@ class WelcomePage extends StatelessWidget {
               TextStyle(
                   fontSize: 45,
                   fontWeight: FontWeight.bold,
-                  letterSpacing: 4,
+                  fontFamily: 'Ubuntu',
+                  letterSpacing: 3,
                   shadows: [
                     Shadow(
                       offset: Offset(4.0, 7.0),
