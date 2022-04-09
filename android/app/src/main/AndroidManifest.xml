@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.rps_mobile_game">
    <application
-        android:label="rps_mobile_game"
+        android:label="RPS Mobile"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
