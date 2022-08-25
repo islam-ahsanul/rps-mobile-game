@@ -13,5 +13,5 @@ Rock Paper Scissor game for mobile
 
 
 
-:-------------------------:|:-------------------------:
-<img src="https://user-images.githubusercontent.com/91280897/186648154-5d51cc2f-d45d-403b-911b-51d341dfc60f.gif" width="250" height="550"/> |  <img src="https://user-images.githubusercontent.com/91280897/186648224-df085ac0-3b50-4e41-82ad-8f3567a5a0fe.gif" width="250" height="550"/>
+
+<img src="https://user-images.githubusercontent.com/91280897/186648154-5d51cc2f-d45d-403b-911b-51d341dfc60f.gif" width="250" height="550"/>  <img src="https://user-images.githubusercontent.com/91280897/186648224-df085ac0-3b50-4e41-82ad-8f3567a5a0fe.gif" width="250" height="550"/>
